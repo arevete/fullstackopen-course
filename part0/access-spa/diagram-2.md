@@ -1,4 +1,4 @@
-sequenceDiagram
+```sequenceDiagram
     participant U as Usuario
     participant B as Navegador
     participant S as Servidor
@@ -22,3 +22,4 @@ sequenceDiagram
     B->>B: redrawNotes()
 
     B-->>U: Renderiza notas en la página (sin recarga adicional)
+```

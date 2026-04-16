@@ -1,4 +1,4 @@
-sequenceDiagram
+```sequenceDiagram
     participant U as Usuario
     participant B as Navegador (JS SPA)
     participant S as Servidor
@@ -20,3 +20,4 @@ sequenceDiagram
     Note right of S: No hay redirect, ni más requests
 
     B-->>U: Nota visible inmediatamente
+```

@@ -1,4 +1,4 @@
-sequenceDiagram
+```sequenceDiagram
     participant U as Usuario
     participant B as Navegador
     participant S as Servidor
@@ -26,3 +26,4 @@ sequenceDiagram
     S-->>B: data.json (con la nota nueva)
 
     B-->>U: Muestra página actualizada con la nueva nota
+```
