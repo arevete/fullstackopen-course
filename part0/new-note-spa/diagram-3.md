@@ -1,4 +1,5 @@
-```sequenceDiagram
+```mermaid
+sequenceDiagram
     participant U as Usuario
     participant B as Navegador (JS SPA)
     participant S as Servidor
