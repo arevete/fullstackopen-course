@@ -1,4 +1,5 @@
-```sequenceDiagram
+```mermaid
+sequenceDiagram
     participant U as Usuario
     participant B as Navegador
     participant S as Servidor
