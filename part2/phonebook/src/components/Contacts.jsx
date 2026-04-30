@@ -1,16 +1,19 @@
-const Contact = ({person}) => {
+const Contact = ({person, hanldeClick}) => {
     return (
-        <p>
-            {person.name} {person.number}
-        </p>
+        <>
+            <p>
+                {person.name} {person.number}
+                <button onClick={() => hanldeClick(person.id)}>delete</button>
+            </p>
+        </>
     )
 }
 
-const Contacts = ({people}) => {
+const Contacts = ({ people, deleteContact}) => {
     return (
         <>
-        {people.map((person) => 
-            <Contact key={person.id} person={person}/>
+        {people.map((person) =>
+            <Contact key={person.id} person={person} hanldeClick={deleteContact}/>
         )}
         </>
     )
