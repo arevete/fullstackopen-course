@@ -69,8 +69,8 @@ const App = () => {
     if(window.confirm(`delete ${person.name}`)){
       PersonService
         .remove(id)
-        .then(deletedPerson => {
-          setPersons(persons.filter(p => p.id != deletedPerson.id))
+        .then(response => {
+          setPersons(persons.filter(p => p.id != id))
           notify('Contact deleted succesfully', 'success')
         })
     }
